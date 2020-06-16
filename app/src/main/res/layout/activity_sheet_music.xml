@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SheetMusicActivity"
+    android:orientation="vertical"
+    android:background="#E5EBBC"
+    >
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="1900dp"
+                android:layout_height="60dp"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:text="Sheet Music"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="29sp" />
+        </TableRow>
+
+
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/labelYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="Name of Music : "
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+
+            <EditText
+                android:id="@+id/inputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:ems="10"
+                android:hint="eg. Castal in Sky"
+                android:inputType="text"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="Instrument type :"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <LinearLayout
+                android:id="@+id/InstrType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:checkedButton="@id/GuitarType">
+
+
+                    <RadioButton
+                        android:id="@+id/GuitarType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guitar" />
+
+                    <RadioButton
+                        android:id="@+id/BassType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bass" />
+
+                    <RadioButton
+                        android:id="@+id/UkuleleType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ukulele" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/buttonDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Display" />
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo" />
+
+    </TableLayout>
+
+
+
+
+</LinearLayout>

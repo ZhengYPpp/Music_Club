@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HowToUseActivity"
+    android:background="#CBB3A4">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="About this software"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="*This software is a test development software similar to the guitar club,
+        \n which is used to simulate the search and display function of the score,
+        \n plus the popular science connection for musical instrument purchase.\n\n
+        \n1.Click the picture on the 'Buy instrument' on the left to jump to a page to search for scores.\n
+        \n2. Enter the name of the score you want to find.\n
+        \n3.select the instrument you want to play.\n
+        \n4.Click 'Display' then jump to result page.\n
+        \n5.If you want to learn about the guitars
+        on the market, you can return to the homepage and click on the shopping cart
+         picture on the right."
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
